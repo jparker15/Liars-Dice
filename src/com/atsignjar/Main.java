@@ -6,16 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Die die = new Die();
-        Random ran = new Random();
+       Console console = new Console();
 
-        die.roll(ran);
-        System.out.println(die.getValue());
-        die.roll(ran);
-        System.out.println(die.getValue());
-        die.roll(ran);
-        System.out.println(die.getValue());
-        die.roll(ran);
-        System.out.println(die.getValue());
+//       int value = console.getInt(1,6,"Die Value( 1-6)");
+//       int count = console.getInt(1,14,"How" + value + "many");
+
     }
 }
