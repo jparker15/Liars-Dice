@@ -8,25 +8,32 @@ public class Cup {
 
         private ArrayList<Die> dice = new ArrayList<>();
 
-        public Cup (int size){
-            for (int count = 0; count < size; count++){
+        public Cup (int diceAmt){
+            for (int count = 0; count < diceAmt; count++){
                 dice.add(new Die());
             }
         }
 
-        public void roll(Random rand){
-            for (var die: dice) {
-                die.roll(rand);
-            }
-        }
-        public void roll (Random rand, int choice){
-            dice.get(choice).roll(rand);
+        public void addDie(){
+            dice.add(new Die());
         }
 
-        public void roll (Random rand, List<Integer> choices){
-            for (int choice: choices) {
-                dice.get(choice).roll(rand);
-//            roll(rand,choice);
+        public void removeDie(){
+            dice.remove(dice.size() - 1);
+        }
+
+        public void peek(){
+            String output = "";
+            for (var die: dice){
+                output += die.getValue() + "";
+            }
+            System.out.println(output.trim());
+        }
+
+        public void roll(){
+            Random random = new Random();
+            for (var die: dice){
+                die.roll(random);
             }
         }
 
