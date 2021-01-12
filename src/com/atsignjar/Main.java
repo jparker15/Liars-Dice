@@ -21,4 +21,15 @@ public class Main {
 //       int count = console.getInt(1,14,"How" + value + "many");
 
     }
+    /**
+     * improvements:
+     * print out end of round info. call out lai9r and declare who lost a die
+     * declare a player is removed from game
+     * improve overall print outs
+     * clea console at start of next player turn
+     * allow user to enter how many players
+     *
+     * TODO:each round should start with a new player
+     */
+
 }
