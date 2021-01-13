@@ -12,9 +12,13 @@ public class Player {
     };
 
     //shake cup
-
+    public void roll (){
+        cup.roll();
+    }
     // peek
-
+    public void peek (){
+        cup.peek();
+    }
     //make claim
     // get from user two ints one for die value 1-6 and one for amount 1-14
 
